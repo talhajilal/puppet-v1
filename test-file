@@ -1,0 +1,2 @@
+#/bin/bash
+echo "New Test file for Puppet VCS repo sync testing"
