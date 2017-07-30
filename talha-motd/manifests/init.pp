@@ -50,6 +50,5 @@ file { '/etc/motd':
   seluser  => 'system_u',
   type     => 'file',
 }
-}
 
 }
