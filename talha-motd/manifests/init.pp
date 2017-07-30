@@ -36,6 +36,19 @@
 # Copyright 2017 Your name here, unless otherwise noted.
 #
 class motd {
-ensure => present,
+file { '/etc/motd':
+  ensure   => 'file',
+  content  => '{md5}1232aa99863fce81b58054f5675ed785',
+  ctime    => 'Sun Jul 30 07:31:48 +0000 2017',
+  group    => '0',
+  mode     => '644',
+  mtime    => 'Sun Jul 30 07:31:48 +0000 2017',
+  owner    => '0',
+  selrange => 's0',
+  selrole  => 'object_r',
+  seltype  => 'etc_runtime_t',
+  seluser  => 'system_u',
+  type     => 'file',
+}
 
 }
